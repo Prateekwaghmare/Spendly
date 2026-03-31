@@ -87,6 +87,9 @@
             <h3 class="feature-title">Filter by time period</h3>
             <p class="feature-body">View your spending for any date range — last week, last month, or a custom period.</p>
         </div>
+        <div class="feature-card feature-card-cta">
+            <button class="btn-ghost" id="how-it-works-btn">See how it works</button>
+        </div>
     </div>
 </section>
 
@@ -98,4 +101,21 @@
     </div>
 </section>
 
+{% endblock %}
+
+{% block scripts %}
+<div class="modal-overlay" id="video-modal">
+    <div class="modal-content">
+        <button class="modal-close" id="modal-close-btn" aria-label="Close">&times;</button>
+        <div class="modal-video-wrapper">
+            <iframe
+                id="modal-video"
+                src=""
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
 {% endblock %}
